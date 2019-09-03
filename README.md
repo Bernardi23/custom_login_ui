@@ -1,16 +1,20 @@
-# custom_login_ui
+# Custom Log In Screen
 
-A new Flutter project.
+This is an example app, used to show flutter animations for clean UI and UX. 
 
-## Getting Started
+Although the desired design was achieved and ran great on an Emulator, older phones will probably struggle to keep this up with 60 fps, since it takes a lot of mathematical computation to make and animate the path. However, the performance can improve with some updates.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Design inspired by [Dimest@dribbble](https://dribbble.com/Dimest)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The final login button border is off by a few pixels on 16:9 resolutions. Can/Will be fixed.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+**Original design**
+
+![Original design](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/13fedf79989073.5cd3e41b20fb2.jpeg)
+
+**App**
+
+![App](https://media.giphy.com/media/Za8nuvWvEaFuUEIHjy/giphy.gif)
+
+Although I can it make it look more like the actual original design (like the login button animation), the focus of the app (which was the line path animation) was achieved.

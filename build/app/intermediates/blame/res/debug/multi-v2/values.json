@@ -1,19 +1,11 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Lucas\\Documents\\Projects\\Tutorial\\custom_login_ui\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/home/bernardi/www/custom_login_ui/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lucas\\Documents\\Projects\\Tutorial\\custom_login_ui\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "/home/bernardi/www/custom_login_ui/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "353"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

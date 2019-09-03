@@ -68,8 +68,10 @@ class MyCustomPainter extends CustomPainter {
 
       // MAKING PATH TO MAKE LOGIN BUTTON
       for (int i = 0; i <= 100; i++)
-        Offset(size.width / 30,
-            initialHeight - size.height / 2 + 100 + (150 * i / 100)),
+        Offset(
+          size.width / 30,
+          initialHeight - size.height / 2 + 100 + (165 * i / 100),
+        ),
 
       for (int i = 0; i <= 50; i++)
         Offset(
@@ -80,8 +82,10 @@ class MyCustomPainter extends CustomPainter {
         ),
 
       for (int i = 0; i <= 50; i++)
-        Offset(size.width * 29 / 30,
-            initialHeight - size.height / 6 - (60 * i / 50)),
+        Offset(
+          size.width * 29 / 30,
+          initialHeight - size.height / 6 - (60 * i / 50),
+        ),
 
       for (int i = 0; i <= 400; i++)
         Offset(
@@ -106,8 +110,8 @@ class MyCustomPainter extends CustomPainter {
     List<Offset> points = [];
 
     Paint paint = Paint();
-    paint.color = Colors.white;
-    paint.strokeWidth = 1.5;
+    paint.color = Colors.white.withOpacity(1);
+    paint.strokeWidth = 0.3;
     paint.strokeCap = StrokeCap.square;
 
     final realAnimationValue = animation.value * 4;

@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:ui';
+import 'dart:ui' as prefix0;
 
 import 'package:custom_login_ui/pages/painter.dart';
 import 'package:flutter/material.dart';
@@ -81,6 +82,35 @@ class _LoginPageState extends State<LoginPage>
       backgroundColor: Colors.black,
       body: Stack(
         children: <Widget>[
+          Opacity(
+            opacity: .3,
+            child: Container(
+              width: dimensions.width,
+              height: dimensions.height,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      "https://images.unsplash.com/photo-1511912886973-f5f8b49fb08b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"),
+                  fit: BoxFit.fitHeight,
+                  colorFilter: ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.color,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          BackdropFilter(
+            child: Container(
+              height: dimensions.height,
+              width: dimensions.width,
+              color: Colors.transparent,
+            ),
+            filter: ImageFilter.blur(
+              sigmaX: .0,
+              sigmaY: .0,
+            ),
+          ),
           CustomPaint(
             painter: MyCustomPainter(_animationController, dimensions),
             size: Size(dimensions.width, dimensions.height),
@@ -101,18 +131,20 @@ class _LoginPageState extends State<LoginPage>
                   autocorrect: Platform.isIOS ? false : true,
                   enabled: false,
                   style: TextStyle(
-                      fontSize: 22,
-                      fontFamily: "Avenir",
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      decoration: TextDecoration.none),
+                    fontSize: 22,
+                    fontFamily: "Avenir",
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    decoration: TextDecoration.none,
+                  ),
                   cursorColor: Colors.white,
                   cursorWidth: 0.5,
                   strutStyle: StrutStyle.disabled,
                   decoration: InputDecoration(
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.symmetric(
-                          horizontal: dimensions.width / 30 + 50)),
+                    border: InputBorder.none,
+                    contentPadding: EdgeInsets.symmetric(
+                        horizontal: dimensions.width / 30 + 50),
+                  ),
                 ),
               ],
             ),
@@ -250,24 +282,6 @@ class _LoginPageState extends State<LoginPage>
                 fontSize: 18,
                 color: Colors.grey[900],
               ),
-            ),
-          ),
-        ),
-      ),
-    );
-    return GestureDetector(
-      child: Container(
-        width: MediaQuery.of(ctx).size.width * 28 / 30,
-        height: 60,
-        color: Colors.white,
-        child: Center(
-          child: Text(
-            'Login',
-            style: TextStyle(
-              fontFamily: 'Avenir',
-              fontWeight: FontWeight.w800,
-              fontSize: 18,
-              color: Colors.grey[900],
             ),
           ),
         ),

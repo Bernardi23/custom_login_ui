@@ -1,4 +1,4 @@
-#Wed Jun 12 22:39:02 BRT 2019
-base.0=C\:\\Users\\Lucas\\Documents\\Projects\\Tutorial\\custom_login_ui\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Sep 03 22:56:32 UTC 2019
+base.0=/home/bernardi/www/custom_login_ui/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
